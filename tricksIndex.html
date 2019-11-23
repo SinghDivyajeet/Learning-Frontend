@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tricksCSS.css">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, est!</h1>
+    </div> -->
+
+
+    <div class="cards" id="card-holder">
+        <div class="box box1">
+            <h1> Lorem ipsum dolor sit.</h1>
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, alias!</p>
+        </div>
+        <div class="box box2">
+            <h1>Lorem ipsum dolor sit.</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, nam.</p>
+        </div>
+        <div class="box box3">
+            <h1>Lorem ipsum dolor sit.</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, nam.</p>
+        </div>
+        <div class="box box4">
+            <h1>Lorem ipsum dolor sit.</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, nam.</p>
+        </div>
+        <div class="box box5">
+            <h1>Lorem ipsum dolor sit.</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, nam.</p>
+        </div>
+    </div>
+<script>
+    var card_holder = document.getElementById("card-holder")
+
+        // card_holder.addEventListener('mouseover',(event)=>{
+        //     // event.stopPropagation();
+        //     console.log(event.path[0],"MouseOver")
+        //     event.path[0].classList.add('box-hover','slide-next-element')
+        // })
+        // card_holder.addEventListener('mouseout',(event)=>{
+        //     // event.stopPropagation();
+        //     console.log(event.path[0],"MouseOut")
+        //     event.path[0].classList.remove('box-hover','slide-next-element')
+        // })
+        card_holder.addEventListener('click',(event)=>{
+            console.log(event.path[0])
+            event.path[0].classList.toggle("box-hover")
+            console.log(document.getElementsByClassName("box"))
+        })
+    
+</script>
+</body>
+
+</html>
